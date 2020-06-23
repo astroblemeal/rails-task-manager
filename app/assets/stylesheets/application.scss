@@ -24,7 +24,8 @@ h1{
   font-family:  'Roboto', sans-serif;
   color: gray;
   font-weight: lighter;
-  font-size: 50px;
+  font-size: 30px;
+  text-align: center;
 }
 h2 {
   font-family:  'Roboto', sans-serif;
@@ -49,4 +50,25 @@ a {
 
 .btn-primary {
 margin-top: 5px;
+margin-left: 10px;
+}
+
+.all-tasks-container {
+  align-items: row;
+
+}
+
+.flash {
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 8px;
+}
+
+.flash-success {
+  border: 2px solid #1EDD88;
 }

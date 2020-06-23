@@ -1,6 +1,19 @@
 
+<div class= "">
 <h1> <%= @task.title %></h1>
 <h1> <%= @task.details %></h1>
+  <div class="flash flash-success alert alert-dismissible fade show" role="alert">
+    <span><strong>Yay!</strong> 🎉 you successfully added a new task.</span>
+    <a data-dismiss="alert" aria-label="Close">
+      <i class="fas fa-times"></i>
+    </a>
+  </div>
+</div>
+
+
+
+
+
 
 <%= link_to "Back to all tasks", tasks_path, class:"btn btn-primary" %>
 <%= link_to "Delete task", task_path(@task), method: :delete, data: { confirm: "Why are you like this?" }, class:"btn btn-primary" %>

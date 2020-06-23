@@ -1,15 +1,19 @@
 
 <h1>Task manager</h1>
-
+<div class="all-tasks-container">
 <ul>
   <% @tasks.each do |task| %>
   <li>
-
     <%= link_to "#{task.title}", task_path(task)%>
-    <%= "✅" if task.complete %>
+    <% if task.complete %>
+    <%= "✅" %>
+    <% else %>
+    <%= "❌" %>
+    <% end %>
+    <% end %>
   </li>
 
-<% end %>
 </ul>
-
 <%= link_to "New tasks page", "/tasks/new", class:"btn btn-primary" %>
+</div>
+
