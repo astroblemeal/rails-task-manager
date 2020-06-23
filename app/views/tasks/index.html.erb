@@ -1,17 +1,15 @@
 
-<h1>Tasks</h1>
+<h1>Task manager</h1>
 
 <ul>
   <% @tasks.each do |task| %>
   <li>
+
     <%= link_to "#{task.title}", task_path(task)%>
+    <%= "✅" if task.complete %>
   </li>
 
 <% end %>
 </ul>
 
 <%= link_to "New tasks page", "/tasks/new", class:"btn btn-primary" %>
-
-
-
-<i class="fa fa-trash" aria-hidden="true"></i>
