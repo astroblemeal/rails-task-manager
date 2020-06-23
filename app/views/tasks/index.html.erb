@@ -1,12 +1,17 @@
 
 <h1>Tasks</h1>
 
-
 <ul>
   <% @tasks.each do |task| %>
   <li>
-    <%= task.title %>
+    <%= link_to "#{task.title}", task_path(task)%>
   </li>
 
 <% end %>
 </ul>
+
+<%= link_to "New tasks page", "/tasks/new", class:"btn btn-primary" %>
+
+
+
+<i class="fa fa-trash" aria-hidden="true"></i>

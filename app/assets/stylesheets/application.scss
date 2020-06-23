@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+@import "bootstrap/scss/bootstrap";
+
+body{
+  background: rgb(245,245,245);
+  color: rgb(20, 20, 20);
+  font-family:  'Roboto', sans-serif;
+}
+h1{
+  font-family:  'Roboto', sans-serif;
+  color: gray;
+  font-weight: lighter;
+  font-size: 50px;
+}
+h2 {
+  font-family:  'Roboto', sans-serif;
+  color: black;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+
+.form-container {
+  margin: 30px;
+}
+
+.btn-primary {
+margin-top: 5px;
+}
